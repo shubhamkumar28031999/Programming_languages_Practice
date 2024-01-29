@@ -9,8 +9,14 @@ private:
     int length;
     int breadth;
 public:
-    rectangle(int l, int b){ // function with the same name as class is call constructor
-        length=l;            // it is automatically called when class is initialize.
+
+    rectangle(){        // function with the same name as class is call constructor
+        length=0;       // it is automatically called when class is initialize.
+        breadth=0;      
+    }
+
+    rectangle(int l, int b){   // this is overloaded constructors
+        length=l;            
         breadth=b;
     }
 
